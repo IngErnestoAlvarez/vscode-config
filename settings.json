@@ -1,0 +1,59 @@
+{
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.leader": "<space>",
+    "vim.useSystemClipboard": true,
+    "workbench.colorTheme": "Monokai",
+    "git.ignoreMissingGitWarning": true,
+    "editor.fontFamily": "'Roboto Mono'",
+    "editor.fontSize": 16,
+    "editor.fontWeight": 400,
+    "vim.normalModeKeyBindings": [
+        {
+            "before" : ["<tab>"],
+            "commands" : ["workbench.action.nextEditor"]
+        },
+        {
+            "before": ["<S-tab>"],
+            "commands": ["workbench.action.previousEditor"]
+        },
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-n>"],
+            "commands": [":nohl"]
+        },
+        {
+            "before": ["<leader>", "w"],
+            "commands": ["workbench.action.splitEditor"]
+        },
+        {
+            "before": ["<leader>", "d"],
+            "commands": ["workbench.action.closeActiveEditor"]
+        },
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.action.toggleSidebarVisibility"]
+        },
+        {
+            "before": ["<leader>", "f"],
+            "commands": ["workbench.view.explorer"]
+        },
+        {
+            "before": ["<leader>", "h"],
+            "after": ["_"]
+        },
+        {
+            "before": ["<leader>", "l"],
+            "after": ["$"]
+        },
+
+    ],
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.duration": 300,
+    "vim.smartRelativeLine": true,
+    "vim.visualstar": true,
+    "vim.easymotion": true
+
+    
+}
